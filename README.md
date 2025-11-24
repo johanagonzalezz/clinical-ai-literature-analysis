@@ -46,7 +46,7 @@ cfms-pipeline-/
 ├── data/                         # Datos de entrada
 │   ├── articulos_cfm.csv        # Artículos originales
 │   ├── articulos_estructurados.json  # Datos procesados
-│   └── grafo_taxonomia.html     # Visualización html
+│   
 ├── qwen/                         # Agente de extracción semántica
 │   ├── run_qwen.py              # Ejecutor principal
 │   ├── semantic_extractor.py    # Extractor de entidades
@@ -159,10 +159,9 @@ El sistema genera una clasificación clínica multinivel que incluye:
 
 El pipeline genera automáticamente:
 
-1. **Visualiación de los resultados** (`grafo_taxonomia.html`): Visualización interactiva de las relaciones entre conceptos clínicos
-2. **UMAP de agrupamiento** (`umap_clusters.png`): Proyección 2D de los embeddings mostrando los grupos identificados
-3. **Heatmap de Similitud** (`heatmap_similitud.png`): Matriz de similitud entre artículos
-4. **Red de los artículos** (`grafo_cfms.png`): Red de conocimiento de artículos relacionados
+1. **UMAP de agrupamiento** (`umap_clusters.png`): Proyección 2D de los embeddings mostrando los grupos identificados
+2. **Heatmap de Similitud** (`heatmap_similitud.png`): Matriz de similitud entre artículos
+3. **Red de los artículos** (`grafo_cfms.png`): Red de conocimiento de artículos relacionados
 
 ## 📝 Formato de Datos de Entrada
 
