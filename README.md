@@ -9,7 +9,7 @@ Este proyecto implementa un pipeline completo que:
 2. **Analiza** semánticamente el contenido mediante vectores de incrustación y agrupar datos similares entre sí sin necesidad de etiquetas.
 3. **Genera** clasificaciones  del dominio clínico de IA
 4. **Visualiza** los resultados mediante gráficos interactivos
-5. **Produce** reportes clínicos en formato PDF
+5. **Produce** reportes en formato PDF
 
 ## 🏗️ Arquitectura
 
@@ -46,34 +46,34 @@ cfms-pipeline-/
 ├── data/                         # Datos de entrada
 │   ├── articulos_cfm.csv        # Artículos originales
 │   ├── articulos_estructurados.json  # Datos procesados
-│   └── grafo_taxonomia.html     # Visualización del grafo
+│   
 ├── qwen/                         # Agente de extracción semántica
 │   ├── run_qwen.py              # Ejecutor principal
 │   ├── semantic_extractor.py    # Extractor de entidades
-│   ├── graph_builder.py         # Constructor de grafos
-│   ├── visualize_graph.py       # Visualizador de grafos
+│   ├── graph_builder.py         # Constructor de visualizaciones
+│   ├── visualize_graph.py       # Visualizador 
 │   ├── prompts.py               # Prompts para el modelo
 │   └── config.py                # Configuración
-├── agente_cfms/                  # Agente de análisis y taxonomía
+├── agente_cfms/                  # Agente de clasificación
 │   ├── main.py                  # Punto de entrada del agente
 │   ├── loader/                  # Cargadores de datos
 │   │   └── json_loader.py
-│   ├── normalizer/              # Normalización de datos
+│   ├── normalizer/              # Homogenización de datos
 │   │   └── normalizer.py
-│   ├── embeddings/              # Generación de embeddings
+│   ├── embeddings/              # Generación de vectores de incrustación
 │   │   └── semantic_extractor.py
-│   ├── analytics/               # Análisis de similitud y clustering
+│   ├── analytics/               # Análisis de similitud y agrupamiento
 │   │   ├── similarity.py
 │   │   └── clustering.py
-│   ├── graph/                   # Construcción de grafos
+│   ├── graph/                   # Construcción de vizualizaciones
 │   │   └── graph_builder.py
-│   ├── taxonomy/                # Generación de taxonomías
+│   ├── taxonomy/                # Generación de los resultados de clasificación
 │   │   └── taxonomy_engine.py
 │   ├── reports/                 # Generación de reportes
 │   │   ├── reporter.py
 │   │   ├── pdf_report.py
 │   │   └── visualizations.py
-│   ├── data/                    # Datos del agente
+│   ├── data/                    # Datos a procesar
 │   └── output/                  # Resultados generados
 │       ├── reporte_clinico.pdf
 │       ├── taxonomia_cfms.json
@@ -146,7 +146,7 @@ python -m agente_cfms.main
 
 ## 📊 Clasificación Generada
 
-El sistema genera una clasificació clínica multinivel que incluye:
+El sistema genera una clasificación clínica multinivel que incluye:
 
 - **Dominios Clínicos**: Áreas médicas (cardiología, neurología, radiología, etc.)
 - **Tareas de IA**: Predicción, clasificación, segmentación, detección, etc.
@@ -159,10 +159,9 @@ El sistema genera una clasificació clínica multinivel que incluye:
 
 El pipeline genera automáticamente:
 
-1. **Visualiación de los resultados** (`grafo_taxonomia.html`): Visualización interactiva de las relaciones entre conceptos clínicos
-2. **UMAP de agrupamiento** (`umap_clusters.png`): Proyección 2D de los embeddings mostrando los grupos identificados
-3. **Heatmap de Similitud** (`heatmap_similitud.png`): Matriz de similitud entre artículos
-4. **Red de los artículos** (`grafo_cfms.png`): Red de conocimiento de artículos relacionados
+1. **UMAP de agrupamiento** (`umap_clusters.png`): Proyección 2D de los embeddings mostrando los grupos identificados
+2. **Heatmap de Similitud** (`heatmap_similitud.png`): Matriz de similitud entre artículos
+3. **Red de los artículos** (`grafo_cfms.png`): Red de conocimiento de artículos relacionados
 
 ## 📝 Formato de Datos de Entrada
 
@@ -193,30 +192,13 @@ La configuración del sistema se encuentra en:
 
 El pipeline genera los siguientes archivos en `agente_cfms/output/`:
 
-1. **taxonomia_cfms.json**: Taxonomía completa en formato JSON
+1. **taxonomia_cfms.json**: Clasificación completa en formato JSON
 2. **reporte_clinico.pdf**: Reporte ejecutivo en formato PDF
 3. **visualizaciones**: Gráficos PNG de análisis
 
-## 🤝 Contribuciones
-
-Las contribuciones son bienvenidas. Por favor:
-1. Fork el proyecto
-2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
 
 ## 📄 Licencia
 
 MIT
 
-
-## 🔮 Trabajo Futuro
-
-- Integración con más fuentes de datos científicas
-- Dashboard web interactivo
-- Soporte para análisis en tiempo real
-
----
-
-**Nota**: Este pipeline está diseñado para investigación y análisis académico de literatura científica sobre IA en medicina. Los resultados deben ser interpretados en su contexto científico apropiado.
+*Nota**: Este pipeline está diseñado para investigación y análisis académico de literatura científica sobre IA en medicina. Los resultados deben ser interpretados en su contexto científico apropiado.
