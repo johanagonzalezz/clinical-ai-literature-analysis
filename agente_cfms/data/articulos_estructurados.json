@@ -1,0 +1,286 @@
+[
+    {
+        "arquitectura_modelo": "Federated Learning (FL)",
+        "tarea_principal": "Cardiovascular disease prediction",
+        "dominio_medico": "Cardiology",
+        "tipo_datos": [
+            "Biosignals",
+            "Electronic Health Records (EHRs)"
+        ],
+        "recursos_datos": [
+            "Personalized electrocardiogram (ECG) classification",
+            "Large-scale hospital collaboration",
+            "Internet of Things (IoT)-based monitoring",
+            "Secure aggregation through distributed frameworks"
+        ],
+        "limitaciones_reportadas": [
+            "Lack of systematic comparison between data modalities"
+        ],
+        "comentarios_relevantes": "This study comprehensively examines 28 representative investigations from the past five years, including 17 biosignal-based and 11 EHR-based applications. It highlights the complementary strengths of biosignal- and EHR-based approaches.",
+        "id_articulo": 1,
+        "titulo": "Federated Learning for Cardiovascular Disease Prediction: A Comparative Review of Biosignal- and EHR-Based Approaches"
+    },
+    {
+        "arquitectura_modelo": "Deep Learning (DL)",
+        "tarea_principal": "Biomedical Named Entity Recognition (bNER) for treatment prediction in clinical records",
+        "dominio_medico": "Healthcare",
+        "tipo_datos": "Textual",
+        "recursos_datos": "Manual coding approach and multi-task learning method",
+        "limitaciones_reportadas": [
+            "Limited handling of biomedical text complexity by early bNER systems",
+            "Manual configuration of domain-specific features and rules"
+        ],
+        "comentarios_relevantes": "The paper discusses the shift from manually configured bNER systems to DL-based systems that can learn patterns automatically, improving robustness and efficiency.",
+        "id_articulo": 2,
+        "titulo": "A Review on Electronic Health Record Text-Mining for Biomedical Name Entity Recognition in Healthcare Domain"
+    },
+    {
+        "arquitectura_modelo": "bidirectional governance model linked operations and research through multidisciplinary workgroups incorporating SEIPS framework",
+        "tarea_principal": "design, monitor, and deploy ambient AI within routine care",
+        "dominio_medico": "health care",
+        "tipo_datos": "clinical notes, ICD-10 codes, provider well-being data",
+        "recursos_datos": "Fast Healthcare Interoperability Resources (FHIR), internal large language model (LLM)",
+        "limitaciones_reportadas": [
+            "challenges in EHR integration",
+            "coding compliance issues",
+            "real-world evaluation limitations"
+        ],
+        "comentarios_relevantes": "The study provides a framework and protocols for safely implementing ambient AI in health care, including innovations like an embedded pragmatic trial design, human factors engineering, compliance-driven feedback loops, and real-time monitoring.",
+        "id_articulo": 3,
+        "titulo": "A Novel Playbook for Pragmatic Trial Operations to\nMonitor and Evaluate Ambient Artificial Intelligence\nin Clinical Practice"
+    },
+    {
+        "arquitectura_modelo": "biomedical language models",
+        "tarea_principal": "generate robust real-world evidence (RWE)",
+        "dominio_medico": "health care delivery and biomedical discovery",
+        "tipo_datos": "unstructured clinical notes in electronic medical records (EMRs)",
+        "recursos_datos": "population-level observational data at scale",
+        "limitaciones_reportadas": [
+            "confounders in clinical notes",
+            "challenging to generate robust real-world evidence"
+        ],
+        "comentarios_relevantes": "TRIALSCOPE addresses these challenges through scaling clinical text structuring, denoising/imputation, and causal inference techniques.",
+        "id_articulo": 4,
+        "titulo": "TRIALSCOPE — A Framework for Clinical Trial Simulation from Real-World Data"
+    },
+    {
+        "arquitectura_modelo": "No specific architecture details provided",
+        "tarea_principal": "Not explicitly defined in the abstract",
+        "dominio_medico": "Clinical text and/or structured data from electronic medical records (EMRs)",
+        "tipo_datos": "Non-imaging EMR data",
+        "recursos_datos": [
+            {
+                "nombre": "MIMIC-III",
+                "tipo": "Narrowly-scoped clinical dataset"
+            },
+            {
+                "nombre": "PubMed",
+                "tipo": "Broad, public biomedical corpus"
+            }
+        ],
+        "limitaciones_reportadas": [
+            "Most models are trained on small, narrowly-scoped clinical datasets",
+            "Most models are trained on broad, public biomedical corpora",
+            "Tasks evaluated do not provide meaningful insights on their usefulness to health systems"
+        ],
+        "comentarios_relevantes": "The review proposes an improved evaluation framework for measuring the benefits of clinical foundation models that is more closely aligned with metrics relevant to healthcare.",
+        "id_articulo": 5,
+        "titulo": "The shaky foundations of large language models and foundation models for electronic health records"
+    },
+    {
+        "arquitectura_modelo": "M-KAT framework",
+        "tarea_principal": "Clinical diagnosis and treatment, medical question answering, medical research, health management",
+        "dominio_medico": "Medical field",
+        "tipo_datos": "Diverse data types",
+        "recursos_datos": "Professional evaluation datasets and metrics, in-depth studies on medical multimodal large language models (MLLMs), exploration of medical agents and multi-agent frameworks",
+        "limitaciones_reportadas": [
+            "Enhancing the medical professionalism of LLMs remains a major challenge"
+        ],
+        "comentarios_relevantes": "This study proposed a novel model training theoretical framework, the M-KAT framework, which integrated domain-specific training methods for LLMs with the unique characteristics of the medical discipline. The study also identified main directions for future research on medical LLMs.",
+        "id_articulo": 6,
+        "titulo": "Applications and Future Prospects of Medical LLMs: A Survey Based on the M-KAT Conceptual Framework"
+    },
+    {
+        "arquitectura_modelo": "Large Language Models (LLMs)",
+        "tarea_principal": "Assessing the safety and effectiveness of Large Language Models (LLMs) in healthcare through human evaluations",
+        "dominio_medico": "Various medical specialties",
+        "tipo_datos": "Literature reviews",
+        "recursos_datos": "142 studies",
+        "limitaciones_reportadas": [
+            "Gaps in reliability",
+            "Gaps in generalizability",
+            "Gaps in applicability"
+        ],
+        "comentarios_relevantes": "Proposes QUEST, a comprehensive and practical framework for human evaluation of LLMs, covering three phases of workflow: Planning, Implementation and Adjudication, and Scoring and Review.",
+        "id_articulo": 7,
+        "titulo": "A framework for human evaluation of large language models in healthcare derived from literature review"
+    },
+    {
+        "arquitectura_modelo": "Large Language Models (LLMs)",
+        "tarea_principal": "Clinical note generation and summarization",
+        "dominio_medico": "Healthcare",
+        "tipo_datos": "Clinician-annotated sentences",
+        "recursos_datos": "18 experimental configurations involving LLMs for clinical note generation, consisting of 12,999 clinician-annotated sentences",
+        "limitaciones_reportadas": [
+            "Hallucination rate of 1.47%",
+            "Omission rate of 3.45%"
+        ],
+        "comentarios_relevantes": "The proposed framework includes an error taxonomy, an experimental structure for iterative comparisons, a clinical safety framework to evaluate the harms of errors, and a graphical user interface (CREOLA) to facilitate these processes. The framework was successful in reducing major errors below previously reported human note-taking rates, indicating its potential for safer clinical documentation.",
+        "id_articulo": 8,
+        "titulo": "A framework to assess clinical safety and hallucination rates of LLMs for medical text summarisation"
+    },
+    {
+        "arquitectura_modelo": "A framework grounded in four bioethical principles",
+        "tarea_principal": "Promoting the responsible use of Large Language Models (LLMs) in medicine",
+        "dominio_medico": "Medical research, medical education, and clinical tasks",
+        "tipo_datos": "Not explicitly mentioned, but likely includes textual data from medical literature, patient records, etc.",
+        "recursos_datos": "Not explicitly mentioned, but implies access to various datasets relevant to medicine",
+        "limitaciones_reportadas": [
+            "Balancing ethical boundaries and innovation in LLM technology",
+            "Mitigating risks associated with LLMs in medicine"
+        ],
+        "comentarios_relevantes": "The proposed framework aims to ensure the ethical, equitable, and effective use of LLMs in medicine while addressing the challenges of balancing innovation and ethics.",
+        "id_articulo": 9,
+        "titulo": "Medical Ethics of Large Language Models in Medicine"
+    },
+    {
+        "arquitectura_modelo": "Generative artificial intelligence (AI), including large language models (LLMs)",
+        "tarea_principal": "Integrating AI in medical education",
+        "dominio_medico": "Medical education",
+        "tipo_datos": "Text-based data from abstract",
+        "recursos_datos": "Institutional implementation structures, sustainable funding mechanisms, rigorous research methodologies",
+        "limitaciones_reportadas": [
+            "Learners' clinical reasoning development and professional growth may be undermined by unguided adoption of AI tools",
+            "Potential exacerbation of inequities between institutions",
+            "Compromising physician development",
+            "Failing to improve patient care"
+        ],
+        "comentarios_relevantes": "The authors argue that the primary barrier to effective AI integration in medical education is not technological sophistication, but rather 3 critical infrastructure deficiencies: institutional implementation structures, sustainable funding mechanisms, and rigorous research methodologies.",
+        "id_articulo": 10,
+        "titulo": "It Takes More Than Enthusiasm: The Missing Infrastructure to Unlock AI's Potential in Medical Education"
+    },
+    {
+        "arquitectura_modelo": "knowledge-enhanced two-stage generative framework (KTGF)",
+        "tarea_principal": "term-status pair extraction from medical dialogues (MD-TSPE)",
+        "dominio_medico": "diagnosis dialogue systems and the automatic scribe of electronic medical records (EMRs)",
+        "tipo_datos": "medical dialogues",
+        "recursos_datos": [
+            "Chunyu",
+            "CMDD"
+        ],
+        "limitaciones_reportadas": [
+            "the generative methods output a whole sequence consisting of term-status pairs in one stage and ignore integrating prior knowledge"
+        ],
+        "comentarios_relevantes": [
+            "The proposed KTGF framework addresses the limitations of previous generative methods by employing a two-stage approach, where terms are generated first and their statuses are inferred in the second phase. The use of task-specific prompts and a knowledge-enhanced prompt helps in learning the relationship between terms and generating accurate statuses. The introduction of a 'not mentioned' status enhances the availability of terms and enriches the training data, making it particularly effective in low-resource settings."
+        ],
+        "id_articulo": 11,
+        "titulo": "A Knowledge-enhanced Two-stage Generative Framework for Medical Dialogue Information Extraction"
+    },
+    {
+        "arquitectura_modelo": "Large Language Models (LLMs)",
+        "tarea_principal": "Evaluation of Medical Document Generation",
+        "dominio_medico": "Emergency Department",
+        "tipo_datos": "Medical Records",
+        "recursos_datos": "33 LLM-generated Emergency Department records across five criteria",
+        "limitaciones_reportadas": [
+            "Extensive expert involvement required to ensure reliability, limiting clinical applications"
+        ],
+        "comentarios_relevantes": "The developed framework includes three progressive Chain of Thought (CoT) strategies: Qualitative (expert persona), Quantitative-qualitative (error analysis), and Insight-integrated (expert reasoning). It demonstrates strong correlation with expert evaluations, outperforming other methods.",
+        "id_articulo": 12,
+        "titulo": "LLM-Based Medical Document Evaluation: Integrating Human Expert Insights"
+    },
+    {
+        "arquitectura_modelo": "Large Language Model (LLM), Logic-based model, Named Entity Recognition (NER)",
+        "tarea_principal": "Assessment of Clinical Reasoning (CR) documentation in the electronic health record",
+        "dominio_medico": "Internal Medicine",
+        "tipo_datos": "Textual data from admission notes",
+        "recursos_datos": "Retrospective and prospective sets of internal medicine resident admission notes from New York University Grossman School of Medicine and University of Cincinnati College of Medicine, annotated for NER for 5 entities (diagnosis, diagnostic category, prioritization of diagnosis language, data, and linkage terms)",
+        "limitaciones_reportadas": [
+            "Limited performance of some models in certain domains (e.g., D1 classification and EA models)",
+            "Need for further validation and refinement of models at UC"
+        ],
+        "comentarios_relevantes": "This study represents the first multi-institutional application of Large Language Models for evaluating CR documentation in electronic health records, potentially enhancing feedback mechanisms for medical education and practice.",
+        "id_articulo": 13,
+        "titulo": "Large Language Model–Based Assessment of Clinical Reasoning Documentation in the Electronic Health Record Across Two Institutions: Development and Validation Study"
+    },
+    {
+        "arquitectura_modelo": "Large Language Models (LLMs)",
+        "tarea_principal": "Automate the assessment criteria and risk factors extraction from preventive guidelines",
+        "dominio_medico": "Preventive Medicine",
+        "tipo_datos": "Textual Guidelines",
+        "recursos_datos": [
+            {
+                "nombre": "Adult Guidelines",
+                "fuente": "United States Preventive Services Taskforce"
+            },
+            {
+                "nombre": "State-of-the-art LLMs",
+                "cantidad": 3
+            }
+        ],
+        "limitaciones_reportadas": [
+            "Constraints related to the maximum length of input tokens",
+            "Tendency to generate content rather than adhering strictly to the original input",
+            "Ethical considerations in real-world clinical settings"
+        ],
+        "comentarios_relevantes": "Development of a data structure to store annotated preventive guidelines and make them publicly available; paving the way for future integration of guidelines into EHR systems.",
+        "id_articulo": 14,
+        "titulo": "Zero-shot learning to extract assessment criteria and medical services from the preventive healthcare guidelines using large language models"
+    },
+    {
+        "arquitectura_modelo": "Large Language Models (LLMs)",
+        "tarea_principal": "Assess the agent capabilities of LLMs in medical records contexts",
+        "dominio_medico": "Health Care",
+        "tipo_datos": "Patient-specific clinically derived tasks from 10 categories, realistic patient profiles, Fast Healthcare Interoperability Resources-compliant environment",
+        "recursos_datos": "300 patient-specific clinically derived tasks, 100 realistic patient profiles with over 700,000 data elements, Fast Healthcare Interoperability Resources-compliant interactive environment, standard application programming interfaces and communication infrastructure",
+        "limitaciones_reportadas": [
+            "Lack of a standardized dataset to benchmark the agent capabilities of LLMs in medical applications",
+            "Significant variation in performance across task categories"
+        ],
+        "comentarios_relevantes": "Introduces MedAgentBench, a broad evaluation suite to assess LLMs' agent capabilities in medical records contexts; provides a valuable framework for model developers to track progress and drive continuous improvements in the agent capabilities of LLMs within the medical domain.",
+        "id_articulo": 15,
+        "titulo": "MedAgentBench: A Virtual EHR Environment to Benchmark Medical LLM Agents"
+    },
+    {
+        "arquitectura_modelo": "Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), Automatic Speech Recognition (ASR)",
+        "tarea_principal": "Automate the creation of SOAP (Subjective, Objective, Assessment, Plan) notes",
+        "dominio_medico": "Clinical Documentation",
+        "tipo_datos": "Text and Voice",
+        "recursos_datos": "ACI-BENCH dataset",
+        "limitaciones_reportadas": [
+            "Resource-constrained environments",
+            "Limited applicability to complex clinical scenarios"
+        ],
+        "comentarios_relevantes": "MediNotes demonstrates significant improvements in accuracy, efficiency, and usability compared to existing solutions, providing a promising approach to alleviate the administrative burden on healthcare professionals.",
+        "id_articulo": 16,
+        "titulo": "A GEN AI Framework for Medical Note Generation "
+    },
+    {
+        "arquitectura_modelo": "knowledge graphs and large language models (LLMs)",
+        "tarea_principal": "clinical trial recruitment optimization",
+        "dominio_medico": "medical research and clinical trials",
+        "tipo_datos": "structured and unstructured data",
+        "recursos_datos": "precise inclusion and exclusion criteria, detailed clinical trial recruitment questionnaire, legal and ethical standards compliance",
+        "limitaciones_reportadas": [
+            "limited applicability to certain types of clinical trials",
+            "requirement for continuous updates and maintenance of knowledge graphs and LLMs"
+        ],
+        "comentarios_relevantes": "The paper presents a promising approach to improve clinical trial recruitment through the integration of advanced AI technologies. However, it acknowledges potential limitations such as the need for ongoing updates and maintenance of the knowledge graphs and LLMs.",
+        "id_articulo": 17,
+        "titulo": "Enhanced pre-recruitment framework for clinical trial questionnaires through the integration of large language models and knowledge graphs"
+    },
+    {
+        "arquitectura_modelo": "Large Language Models (LLMs)",
+        "tarea_principal": "Clinical Context Evaluation",
+        "dominio_medico": "Medicine",
+        "tipo_datos": "Instruction-tuning dataset",
+        "recursos_datos": "58 medically oriented language corpora, totaling 5M instances with 19K instructions, across 122 tasks",
+        "limitaciones_reportadas": [
+            "Most models struggle with complex clinical tasks"
+        ],
+        "comentarios_relevantes": "The study presents MedS-Bench as a comprehensive benchmark to evaluate LLMs in clinical contexts, evaluates nine leading LLMs, and introduces MedS-Ins, a large-scale instruction-tuning dataset for medicine. It also showcases the effectiveness of the dataset through a proof-of-concept experiment and invites the research community to contribute to its expansion.",
+        "id_articulo": 18,
+        "titulo": "Towards evaluating and building versatile large language models for medicine"
+    }
+]
