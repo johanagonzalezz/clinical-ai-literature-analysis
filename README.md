@@ -54,26 +54,26 @@ cfms-pipeline-/
 │   ├── visualize_graph.py       # Visualizador 
 │   ├── prompts.py               # Prompts para el modelo
 │   └── config.py                # Configuración
-├── agente_cfms/                  # Agente de análisis y taxonomía
+├── agente_cfms/                  # Agente de clasificación
 │   ├── main.py                  # Punto de entrada del agente
 │   ├── loader/                  # Cargadores de datos
 │   │   └── json_loader.py
-│   ├── normalizer/              # Normalización de datos
+│   ├── normalizer/              # Homogenización de datos
 │   │   └── normalizer.py
-│   ├── embeddings/              # Generación de embeddings
+│   ├── embeddings/              # Generación de vectores de incrustación
 │   │   └── semantic_extractor.py
-│   ├── analytics/               # Análisis de similitud y clustering
+│   ├── analytics/               # Análisis de similitud y agrupamiento
 │   │   ├── similarity.py
 │   │   └── clustering.py
 │   ├── graph/                   # Construcción de vizualizaciones
 │   │   └── graph_builder.py
-│   ├── taxonomy/                # Generación de taxonomías
+│   ├── taxonomy/                # Generación de los resultados de clasificación
 │   │   └── taxonomy_engine.py
 │   ├── reports/                 # Generación de reportes
 │   │   ├── reporter.py
 │   │   ├── pdf_report.py
 │   │   └── visualizations.py
-│   ├── data/                    # Datos del agente
+│   ├── data/                    # Datos a procesar
 │   └── output/                  # Resultados generados
 │       ├── reporte_clinico.pdf
 │       ├── taxonomia_cfms.json
@@ -193,7 +193,7 @@ La configuración del sistema se encuentra en:
 
 El pipeline genera los siguientes archivos en `agente_cfms/output/`:
 
-1. **taxonomia_cfms.json**: Taxonomía completa en formato JSON
+1. **taxonomia_cfms.json**: Clasificación completa en formato JSON
 2. **reporte_clinico.pdf**: Reporte ejecutivo en formato PDF
 3. **visualizaciones**: Gráficos PNG de análisis
 
