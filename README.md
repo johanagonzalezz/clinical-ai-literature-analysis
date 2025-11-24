@@ -159,9 +159,7 @@ El sistema genera una clasificación clínica multinivel que incluye:
 
 El pipeline genera automáticamente:
 
-1. **UMAP de agrupamiento** (`umap_clusters.png`): Proyección 2D de los embeddings mostrando los grupos identificados
-2. **Heatmap de Similitud** (`heatmap_similitud.png`): Matriz de similitud entre artículos
-3. **Red de los artículos** (`grafo_cfms.png`): Red de conocimiento de artículos relacionados
+ **Heatmap de Similitud** (`heatmap_similitud.png`): Matriz de similitud entre artículos
 
 ## 📝 Formato de Datos de Entrada
 
